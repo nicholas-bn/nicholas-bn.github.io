@@ -25,8 +25,23 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="col-12">
+          <div class="rounded">
             {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+          </div>
+          <div class="lg:text-center">
+            <ul class="social-icons">
+              {{ range site.Data.social.main }}
+                <li>
+                  <a
+                    target="_blank"
+                    aria-label="{{ .name }}"
+                    rel="nofollow noopener"
+                    href="{{ .link | safeURL }}">
+                    <i class="{{ .icon }}"></i>
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
           </div>
         </div>
       </div>
