@@ -49,10 +49,26 @@ You can check this documentation if you need help setting up your HMAC credentia
 Do not forget to specify Write role and to include HMAC Credential.
 {{< /notice >}}
 
+```json
+{
+    "apikey": "<API_KEY>",
+    "cos_hmac_keys": {
+        "access_key_id": "<ACCESS_KEY_ID>",
+        "secret_access_key": "<SECRET_ACCESS_KEY>"
+    },
+    "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+    "iam_apikey_description": "Auto-generated for key ...",
+    "iam_apikey_id": "ApiKey-47700220-f7af-4ae9-aeb5-cd51f421e65c",
+    "iam_apikey_name": "<API_KEY_NAME>",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::...",
+    "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:..."
+}
+```
 
 4.	Note somewhere the `access_key_id` and `secret_access_key` value that will be used later in the secret creation in step 2.
 
-5.	You’ll also need the `s3 endpoint`, this URL depends on your bucket region. In the service credentials you’ll find a link in the “endpoints” key. Open this link in your browser/curl/etc. Retrieve the URL that matches your region. In our test, we used : `https://s3.eu-de.cloud-object-storage.appdomain.cloud`.
+5.	You’ll also need the `s3 endpoint`, this URL depends on your bucket region. In the service credentials you’ll find a link in the `endpoints` key. Open this link in your browser/curl/etc. Retrieve the URL that matches your region. In our test, we used : `https://s3.eu-de.cloud-object-storage.appdomain.cloud`.
 
 6.	The last parameter is the `region`. For the S3 API consumption you’ll need to find the storage class as specified in this [documentation](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-aws-cli#aws-cli-config)
 Depending on your bucket region and type (standard, smart, cold, etc), retrieve the LocationConstraint following this [documentation](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-classes#classes-locationconstraint)
