@@ -14,7 +14,7 @@ draft: false
     var adobeDCView = new AdobeDC.View({clientId: "e888a96aa42146bea180538e306d7e31", divId: "adobe-dc-view"}); // this client id only work for the "nicholas-bn.github.io" domain
     adobeDCView.previewFile({
       content:{ location:
-        { url: "./CV_Nicho_EN_dec_2024_without_mail_tel.pdf"}},
+        { url: "https://raw.githubusercontent.com/nicholas-bn/nicholas-bn.github.io/main/CV_without_personnal_info.pdf"}},
       metaData:{fileName: "Nicholas's CV"}
     },
     {
