@@ -8,6 +8,7 @@ categories: ["Openshift", "Logging", "IBM Cloud"]
 author: "Nicholas"
 tags: ["Openshift", "Elastic", "Lokistack", "Logging", "IBM Cloud"]
 draft: false
+summary: "In this article I'll explain step by step on: how to use IBM Cloud Object S3 API for Loki's ingester and compactor, how to migrate from Elastic to Loki, cleanup old ressources and check it's working fine."
 ---
 
 ## Introduction
