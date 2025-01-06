@@ -2,10 +2,28 @@
   <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
+        <div class="text-center">
           <!-- {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded" "Size" "200x200") }} -->
           <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
+          <!-- <div class="content">{{ .Content }}</div> -->
+          <!-- <div class="content"> -->
+            <!-- <div id="adobe-dc-view" style="height: 100vh; width: 80vh;" class="align-items-center justify-content-center rounded"></div> -->
+            <div id="adobe-dc-view" class="rounded h-100 d-inline-block" style="height: 750px"></div>
+            <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+            <script type="text/javascript">
+              document.addEventListener("adobe_dc_view_sdk.ready", function(){
+                var adobeDCView = new AdobeDC.View({clientId: "e888a96aa42146bea180538e306d7e31", divId: "adobe-dc-view"}); // this client id only work for a specific domain
+                adobeDCView.previewFile({
+                  content:{ location:
+                    { url: "https://raw.githubusercontent.com/nicholas-bn/nicholas-bn.github.io/main/CV_without_personnal_info.pdf"}},
+                  metaData:{fileName: "Nicholas's CV"}
+                },
+                {
+                  embedMode: "SIZED_CONTAINER"
+                });
+              });
+            </script>
+          <!-- </div> -->
         </div>
       </div>
     </div>
