@@ -1,0 +1,5 @@
+# The base URL of your site (required). This will be prepended to all relative URLs.
+baseURL = "https://localhost:1313"
+
+[params]
+adobeClientId = "7c5893828bf5428da9c7df99063f6c5f"
