@@ -2,9 +2,9 @@
 title: "Quick install of a Kafka instance on an IBM Cloud VSI"
 meta_title: ""
 description: "this is meta description"
-date: 2025-01-13T05:00:00Z
+date: 2025-01-06T05:00:00Z
 image: "/images/post-2/logo-kafka-install.png"
-categories: ["Kafka", "VSI", "IBM Cloud"]
+categories: ["Kafka", "IBM Cloud"]
 author: "Nicholas"
 tags: ["Kafka", "VSI", "IBM Cloud"]
 draft: false

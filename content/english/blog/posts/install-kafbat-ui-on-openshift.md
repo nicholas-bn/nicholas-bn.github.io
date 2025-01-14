@@ -2,9 +2,9 @@
 title: "Install Kafbat UI on Openshift"
 meta_title: ""
 description: "this is meta description"
-date: 2025-01-14T06:00:00Z
+date: 2025-01-13T06:00:00Z
 image: "/images/post-3/kafbat-ui-logo-2.png"
-categories: ["Kafka", "Openshift", "Kafbat"]
+categories: ["Kafka", "Openshift"]
 author: "Nicholas"
 tags: ["Kafka", "Kafbat UI", "Openshift", "Kafka UI"]
 draft: false
