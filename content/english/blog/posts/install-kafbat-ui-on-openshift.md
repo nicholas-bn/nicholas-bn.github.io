@@ -3,7 +3,7 @@ title: "Install Kafbat UI on Openshift"
 meta_title: ""
 description: "this is meta description"
 date: 2025-01-14T06:00:00Z
-image: "/images/post-3/kafbat-ui-logo.png"
+image: "/images/post-3/kafbat-ui-logo-2.png"
 categories: ["Kafka", "Openshift", "Kafbat"]
 author: "Nicholas"
 tags: ["Kafka", "Kafbat UI", "Openshift", "Kafka UI"]
@@ -18,6 +18,10 @@ This article will provide a deployment, service and route to run easily and rapi
 **Kafbat UI is a free, open-source web UI to monitor and manage Apache Kafka clusters.**
 
 Kafbat UI is a simple tool that makes your data flows observable, helps find and troubleshoot issues faster and deliver optimal performance. Its lightweight dashboard makes it easy to track key metrics of your Kafka clusters - Brokers, Topics, Partitions, Production, and Consumption.
+
+{{< notice "note" >}}
+Documentation : https://ui.docs.kafbat.io/
+{{< /notice >}}
 
 <hr>
 
