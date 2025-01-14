@@ -57,6 +57,9 @@ jobs:
       - name: Publish to GitHub Pages
         run: npm run build
 
+      - name: Copy Google Search Console HTML Validation file
+        run: cp ./googlef143d3301203175c.html ./public/googlef143d3301203175c.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
