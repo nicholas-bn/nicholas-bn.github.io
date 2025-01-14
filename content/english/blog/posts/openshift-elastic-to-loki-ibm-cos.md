@@ -3,7 +3,7 @@ title: "Migration of Openshift's ClusterLogging operator from Elastic to Loki us
 meta_title: ""
 description: "this is meta description"
 date: 2024-12-27T05:00:00Z
-image: "/images/logo_loki.png"
+image: "/images/post-1/logo_loki.png"
 categories: ["Openshift", "Logging", "IBM Cloud"]
 author: "Nicholas"
 tags: ["Openshift", "Elastic", "Lokistack", "Logging", "IBM Cloud"]
