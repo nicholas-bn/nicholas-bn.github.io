@@ -7,7 +7,11 @@ button:
   enable: true
   label: "Get Started Now"
   link: "https://github.com/zeon-studio/hugoplate"
-
+sitemap:
+  changefreq: ""
+  disable: true
+  priority: -1
+  
 # don't create a separate page
 _build:
   render: "never"

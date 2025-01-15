@@ -6,6 +6,10 @@ meta_title: ""
 description: "This is meta description"
 # save as draft
 draft: false
+sitemap:
+  changefreq: ""
+  disable: true
+  priority: -1
 ---
 
 {{< toc >}}
