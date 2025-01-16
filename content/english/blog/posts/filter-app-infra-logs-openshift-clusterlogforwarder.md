@@ -119,3 +119,5 @@ spec:
 ```
 
 I can now check assert on my collector pods or on my kafka instance (using [Kafbat UI for example]({{< ref "/blog/posts/install-kafbat-ui-on-openshift.md" >}})) that logs are now filtered and sent.
+
+<hr>

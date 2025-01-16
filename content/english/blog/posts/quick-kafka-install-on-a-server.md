@@ -86,3 +86,5 @@ $ bin/kafka-console-consumer.sh --topic your-topic --from-beginning --bootstrap-
 
 Or you can use tools like [Kafbat UI](https://github.com/kafbat/kafka-ui) (ex Kafka UI) deployed locally or on your Openshift like we did in this [article]({{< ref "/blog/posts/install-kafbat-ui-on-openshift.md" >}}). 
 {{< image src="images/post-2/kafbat-ui/kafbat-ui.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="border rounded img-fluid" title="image title"  webp="false" >}}
+
+<hr>

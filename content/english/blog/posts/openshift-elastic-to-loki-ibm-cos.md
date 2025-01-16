@@ -217,3 +217,4 @@ oc delete -n openshift-logging pvc -l logging-cluster=elasticsearch
 You should find some compacted files, e.g:
 {{< image src="images/post-1/loki-logs-in-cos.png" caption="" alt="alter-text" height="" width="" position="left" option="q100"  title="image title" class="border rounded img-fluid" webp="false" >}}
 
+<hr>
