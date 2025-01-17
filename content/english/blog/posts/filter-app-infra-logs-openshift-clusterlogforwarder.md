@@ -15,6 +15,8 @@ summary: "This article will explore how we managed to filter application and inf
 
 For a specific use case, we wanted to filter `application` and `infrastructure` logs that were transitting through the Cluster Log Forwarder that matched a specific pattern before redirecting it to a specific Kafka topic.
 
+At first we wanted to configure `Vector` using [VRL](https://vector.dev/docs/reference/vrl/) (Vector Remap Language) to add a new source/transform sink, but we can't modify Vector configuration for now : [Enhancement Request](https://issues.redhat.com/browse/RFE-6293).
+
 For version 5.8 and before of Cluster Logging, only the `audit` type log can be filtered. 
 
 Starting from Cluster Logging 5.9, you can filter `application` and `infrastructure` logs only if you're using the `Vector` collector.
@@ -118,6 +120,6 @@ spec:
         - kafka-filtered
 ```
 
-I can now check assert on my collector pods or on my kafka instance (using [Kafbat UI for example]({{< ref "/blog/posts/install-kafbat-ui-on-openshift.md" >}})) that logs are now filtered and sent.
+I can now assert on my collector pods or on my kafka instance (using [Kafbat UI for example]({{< ref "/blog/posts/install-kafbat-ui-on-openshift.md" >}})) that logs are now filtered and sent.
 
 <hr>
